@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Hentaigana+Akari&display=swap');
+
+  body{
+    background-image: url(https://images.pexels.com/photos/33834/landscape-shore-sunset-clouds.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-image: url(https://images.pexels.com/photos/57705/lake-evening-sunset-abendstimmung-57705.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-image: url(https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-image: url(https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    
+    background-size:cover;  
+    /* height: 100%; 
+    width: 100%; */
+    /* font-family: 'Moo Lah Lah', cursive; */
+}  
+
+body{
+    background-color: #323335;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+    flex-direction: column;
+    perspective: 1200px;
+}
+
+h1, h2{
+padding:0;
+margin: 0;
+position: relative;
+color: rgb(229, 182, 214);
+}
+
+h1{
+    font-size: 4rem;
+    font-family: 'Raleway', sans-serif;
+    animation: 5s rotate ease-in-out infinite;
+}
+
+@keyframes rotate {
+    0%, 100%{
+        transform: rotate3d(0,1,0,-20deg);
+    }
+    50%{
+        transform: rotate3d(0,1,0,20deg);
+    }
+}
+
+h2{
+    margin-top: 30px;
+    font-size: 1rem;
+    letter-spacing: -2px;
+    color:rgb(255, 255, 255);
+    animation: 5s updown ease-in-out infinite;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1::before,
+h1::after{
+    content: 'Coming Life Selector';
+    font-family: 'Raleway', sans-serif;
+}
+
+h2::before,
+h2::after{
+    font-family: 'Raleway', sans-serif;
+    content: 'Not satisfied with the current life? Just choose the next life U want!';
+    
+}
+
+h1::before,
+h1::after,
+h2::before,
+h2::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+h1::before{
+    transform: translate3d(10px, 10px, -10px);
+    color: rgb(219, 0, 84);
+    animation: 5s h1-before ease-in-out infinite;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+@keyframes h1-before {
+    0%, 100%{
+        transform: translate3d(10px, 10px, -10px);
+    }
+    50%{
+        transform: translate3d(-10px, 10px, -10px);
+    }
+}
+
+
+h1::after{
+    transform: translate3d(5px, 5px, -5px);
+    color: rgb(190, 59, 149);
+    animation: 5s h1-after ease-in-out infinite;
+    font-family: 'Raleway', sans-serif;
+}
+
+@keyframes h1-after {
+    0%, 100%{
+        transform: translate3d(5px, 5px, -5px);
+    }
+    50%{
+        transform: translate3d(-5px, 5px, -5px);
+    }
+}
+
+
+h2::before{
+    transform: translate3d(0px, 4px, -8px);
+    color:rgba(11, 158, 158, 0.582);
+    font-family: 'Raleway', sans-serif;
+}
+
+h2::after{
+    transform: translate3d(0px, 2px, -4px);
+    color:rgba(83, 226, 226, 0.527);
+    font-family: 'Raleway', sans-serif;
+} 
+
+
+.boxbox{
+    display: flex;
+    gap:350px;
+}
+
+:root{
+    font-size: 32px;
+}
+/*
+.life{
+    margin-top: 50px;
+    margin-left: 470px; 
+     font-size:64px;
+    font-weight: 900;
+    color: rgb(229, 182, 214);
+    text-shadow: 5px 5px 3px rgb(18, 19, 18);
+    font-family: 'Raleway', sans-serif;
+    
+}
+*/
+
+
+/* .bbb{
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    height: 50px;
+    width: 150px;
+    line-height: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    color: violet;
+    transition: 1s;
+    transform-origin: center center;
+    transform: translate(-50%, -50%);
+    margin-left: 90px;
+    margin-top: 30px;
+}
+
+
+.bbb:hover{
+    font-size: 40px;
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #81dae693;
+    border: 5px solid #fff;
+    transition: 1s;
+    color:deepskyblue;
+} */
+
+
+/* .p1 a{
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+} */
+
+
+.box{
+    width: 275px;
+    height: 275px;
+    box-shadow: 3px 3px 6px 6px rgb(43, 20, 49);
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    border-radius: 30px 30px 30px 30px; 
+    /* margin-left: 330px; */
+    margin-top: 70px; 
+    opacity: 0.7;
+    transition: ease-in-out;
+    transition: 2.5s;
+}
+
+.box:hover{
+    opacity: 1;
+    box-shadow: 6px 6px 12px 12px rgb(43, 20, 49);
+    transition: ease-in-out;
+    transform: scale(1.2) rotate(-15deg);
+    transition: 2.5s;
+}
+ 
+.box img{
+    height: 100%;
+    width: 100%;
+    transition:  1.5s;
+    /* border-radius: 30px 30px 30px 30px; */
+    opacity: 0.2;
+    transform:translate(0px,0px);
+    transform: scale(0.7);
+}
+
+.box:hover img{
+    opacity: 1;
+    transition:  1.5s;
+    transform:translate(0px,0px);
+}
+
+
+.box:hover .title1{
+    right: 40px;
+    transition: 0.5s;
+    text-shadow:1px 2px 2px  mintcream;
+    font-family: 'Yuji Hentaigana Akari', cursive;
+}
+
+
+.box .title1 .G{
+    font-size: 30px;
+    font-weight: bold;
+    color: gainsboro;
+    position: absolute;
+    bottom: 5px;
+    right: 800px;
+    transition: 0.5s;
+    /* transition-delay: 0.5s; */
+}
+
+.box .title1 .EEE{
+    font-size: 30px;
+    font-weight: bold;
+    color: gainsboro;
+    position: absolute;
+    bottom: 5px;
+    right: 800px;
+    transition: 0.7s;
+    /* transition-delay: 0.5s; */
+}
+
+.box .title1 .N{
+    font-size: 30px;
+    font-weight: bold;
+    color: gainsboro;
+    position: absolute;
+    bottom: 5px;
+    right: 800px;
+    transition: 0.9s;
+    /* transition-delay: 0.5s; */
+}
+
+.box .title1 .D{
+    font-size: 30px;
+    font-weight: bold;
+    color: gainsboro;
+    position: absolute;
+    bottom: 5px;
+    right: 800px;
+    transition: 1.1s;
+    /* transition-delay: 0.5s; */
+}
+
+.box .title1 .E4{
+    font-size: 30px;
+    font-weight: bold;
+    color: gainsboro;
+    position: absolute;
+    bottom: 5px;
+    right: 800px;
+    transition: 1.3s;
+    /* transition-delay: 0.5s; */
+}
+
+.box .title1 .R{
+    font-size: 30px;
+    font-weight: bold;
+    color: gainsboro;
+    position: absolute;
+    bottom: 5px;
+    right: 800px;
+    transition: 1.5s;
+    /* transition-delay: 0.5s; */
+}
+
+
+.box:hover .title1 .G{
+    right: 110px;
+    transition: 1.5s;
+}
+
+.box:hover .title1 .EEE{
+    right: 90px;
+    transition: 1.3s;
+}
+
+.box:hover .title1 .N{
+    right: 70px;
+    transition: 1.1s;
+}
+
+.box:hover .title1 .D{
+    right: 50px;
+    transition: 0.9s;
+}
+
+.box:hover .title1 .E4{
+    right: 30px;
+    transition: 0.7s;
+}
+
+.box:hover .title1 .R{
+    right: 10px;
+    transition: 0.5s;
+}
+
+
+
+.box .title2{
+    transition: 0.5s;
+    display: flex;
+    color: rgb(250, 209, 221);
+    text-shadow:1.5px 1.5px 2px rgb(247, 59, 115);
+}
+
+.box .title2 .F{
+    font-size:18px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -350px;
+    right: 60px;
+    transition: 2.5s;
+}
+
+.box .title2 .E{
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -350px;
+    right: 52.5px;
+    transition: 2.2s;
+}
+
+.box .title2 .M{
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -350px;
+    right: 37.5px;
+    transition: 1.9s;
+}
+
+.box .title2 .A{
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -350px;
+    right: 28.5px;
+    transition: 1.6s;
+}
+
+.box .title2 .L{
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -350px;
+    right: 22.5px;
+    transition: 1.3s;
+}
+
+.box .title2 .EE{
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -350px;
+    right: 14px;
+    transition: 1s;
+}
+
+.box:hover .title2 .F{
+    bottom: 35px;
+    transition: 0.6s; 
+
+}
+
+ .box:hover .title2 .E{
+    bottom: 35px;
+    transition: 0.7s;
+}
+
+.box:hover .title2 .M{
+    bottom: 35px;
+    transition: 0.9s;
+}
+
+.box:hover .title2 .A{
+    bottom: 35px;
+    transition: 1.1s;
+}
+
+.box:hover .title2 .L{
+    bottom: 35px;
+    transition: 1.3s;
+}
+
+.box:hover .title2 .EE{
+    bottom: 35px;
+    transition: 1.5s;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box2{
+    position: absolute;
+    width: 275px;
+    height: 275px;
+    box-shadow: 3px 3px 6px 6px rgb(43, 20, 49);
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+    border-radius: 30px 30px 30px 30px; 
+    /* margin-left: 300px; */
+    margin-top: 70px; 
+    opacity: 0.7;
+    transition: ease-in-out;
+    transition: 2.5s;
+}
+
+.box2:hover{
+    opacity: 1;
+    box-shadow: 6px 6px 12px 12px rgb(43, 20, 49);
+    transition: ease-in-out;
+    transform: scale(1.2) rotate(15deg);
+    transition: 2.5s;
+}
+ 
+.box2 img{
+    height: 100%;
+    width: 100%;
+    transition:  1.5s;
+    /* border-radius: 30px 30px 30px 30px; */
+    opacity: 0.2;
+    transform:translate(0px,0px);
+    transform: scale(0.7);
+}
+
+.box2:hover img{
+    opacity: 1;
+    transition:  1.5s;
+    transform:translate(0px,0px);
+}
+
+.box2:hover .title1{
+    right: 40px;
+    transition: 0.5s;
+    text-shadow:1px 2px 2px  mintcream;
+    font-family: 'Yuji Hentaigana Akari', cursive;
+}
+
+
+.box2 .title1 .G{
+    font-size: 30px;
+    font-weight: bold;
+    color: gainsboro;
+    position: absolute;
+    bottom: 5px;
+    right: 800px;
+    transition: 0.5s;
+    /* transition-delay: 0.5s; */
+}
+
+.box2 .title1 .EEE{
+    font-size: 30px;
+    font-weight: bold;
+    color: gainsboro;
+    position: absolute;
+    bottom: 5px;
+    right: 800px;
+    transition: 0.7s;
+    /* transition-delay: 0.5s; */
+}
+
+.box2 .title1 .N{
+    font-size: 30px;
+    font-weight: bold;
+    color: gainsboro;
+    position: absolute;
+    bottom: 5px;
+    right: 800px;
+    transition: 0.9s;
+    /* transition-delay: 0.5s; */
+}
+
+.box2 .title1 .D{
+    font-size: 30px;
+    font-weight: bold;
+    color: gainsboro;
+    position: absolute;
+    bottom: 5px;
+    right: 800px;
+    transition: 1.1s;
+    /* transition-delay: 0.5s; */
+}
+
+.box2 .title1 .E4{
+    font-size: 30px;
+    font-weight: bold;
+    color: gainsboro;
+    position: absolute;
+    bottom: 5px;
+    right: 800px;
+    transition: 1.3s;
+    /* transition-delay: 0.5s; */
+}
+
+.box2 .title1 .R{
+    font-size: 30px;
+    font-weight: bold;
+    color: gainsboro;
+    position: absolute;
+    bottom: 5px;
+    right: 800px;
+    transition: 1.5s;
+    /* transition-delay: 0.5s; */
+}
+
+
+.box2:hover .title1 .G{
+    right: 110px;
+    transition: 1.5s;
+}
+
+.box2:hover .title1 .EEE{
+    right: 90px;
+    transition: 1.3s;
+}
+
+.box2:hover .title1 .N{
+    right: 70px;
+    transition: 1.1s;
+}
+
+.box2:hover .title1 .D{
+    right: 50px;
+    transition: 0.9s;
+}
+
+.box2:hover .title1 .E4{
+    right: 30px;
+    transition: 0.7s;
+}
+
+.box2:hover .title1 .R{
+    right: 10px;
+    transition: 0.5s;
+}
+
+
+.box2 .title2{
+    transition: 0.5s;
+    display: flex;
+    color: rgb(209, 215, 250);
+    text-shadow:1.5px 1.5px 2px rgb(78, 59, 247);
+    
+}
+
+.box2 .title2 .F{
+    font-size:18px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -350px;
+    right: 60px;
+    transition: 2.5s;
+}
+
+.box2 .title2 .E{
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -350px;
+    right: 52.5px;
+    transition: 2.2s;
+}
+
+.box2 .title2 .M{
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -350px;
+    right: 37.5px;
+    transition: 1.9s;
+}
+
+.box2 .title2 .A{
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -350px;
+    right: 28.5px;
+    transition: 1.6s;
+}
+
+.box2 .title2 .L{
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -350px;
+    right: 22.5px;
+    transition: 1.3s;
+}
+
+.box2 .title2 .EE{
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -350px;
+    right: 14px;
+    transition: 1s;
+}
+
+.box2:hover .title2 .F{
+    bottom: 35px;
+    transition: 0.6s; 
+}
+
+ .box2:hover .title2 .E{
+    bottom: 35px;
+    transition: 0.7s;
+}
+
+.box2:hover .title2 .M{
+    bottom: 35px;
+    transition: 0.9s;
+}
+
+.box2:hover .title2 .A{
+    bottom: 35px;
+    transition: 1.1s;
+}
+
+.box2:hover .title2 .L{
+    bottom: 35px;
+    transition: 1.3s;
+}
+
+.box2:hover .title2 .EE{
+    bottom: 35px;
+    transition: 1.5s;
+} 
